@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+.header-menu>li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+@media screen and (max-width: 768px){
+
+    .header-bar {
+        display: block;
+        background: black;
+        color: white;
+        position: fixed;
+        padding: 8px 12px;
+        border: 1px solid white;
+        right: 0;
+        top: 5rem;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: #0D0E0D;
+        gap: 2rem;
+        padding: 30px;
+        position: fixed;
+        right: 0;
+        top: 4rem;
+        z-index: 99;
+        border: 1px solid rgb(71, 70, 70);
+        box-shadow: 10px 10px 0px #332f2f;
+    }
+}

@@ -1,0 +1,134 @@
+.testinomial {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.left-t {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left-t>span:nth-child(1) {
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.left-t>span:nth-child(4) {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-align: justify;
+    text-transform: none;
+}
+
+
+.testinomial-span {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.testinomial-footer>:nth-child(1) {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.testinomial-footer>:nth-child(2) {
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.right-t {
+    flex: 2;
+    position: relative;
+}
+
+.right-t > img {
+    height: 20rem;
+    position: absolute;
+    width: 17rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid #d39089;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    top: 4rem;
+    right: 7rem;
+    background: var(--planCard);
+}
+.arrow {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    top: 21rem;
+}
+
+.arrow>img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .testinomial {
+        flex-direction: column;
+        margin: -2rem 1rem 2rem;
+    }
+    .left-t>:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .left-t {
+        gap: 1.2rem;
+    }
+
+    .testinomial-span {
+        font-size: 2rem;
+    }
+
+    .left-t>span:nth-child(4) {
+        font-size: 1rem;
+    }
+    .testinomial-footer {
+        line-height: 1.6rem;
+    }
+
+    .right-t > img {
+        position: relative;
+        left: 2rem;
+    }
+
+    .right-t>:nth-child(1) {
+        left: 1rem;
+    }
+
+    .right-t>:nth-child(2) {
+        right: 1rem;
+    }
+
+    .arrow {
+        top: 25rem;
+        left: 9rem;
+    }
+}

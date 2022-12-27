@@ -1,0 +1,272 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: #840c0d;
+    border-radius: 2px;
+}
+
+/* the best ad */
+.the-best-ad {
+    width: fit-content;
+    margin-top: 4rem;
+    background-color: #0d0e0d;
+    border-radius: 4rem;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.the-best-ad>span {
+    z-index: 2;
+}
+
+.the-best-ad>div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    top: 6.5px;
+    z-index: 1;
+}
+
+/* Hero heading */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-text>div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+/* FIGURES */
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 2rem;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: gray;
+    text-transform: none;
+}
+
+/* hero- buttons */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>button:nth-of-type(1) {
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.hero-buttons>button:nth-of-type(2) {
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
+.right-h>.btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+/* heart- rate */
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1f1e1f;
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+}
+
+.heart-rate>img {
+    width: 2rem;
+}
+.heart-rate>span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.heart-rate>span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image {
+    position: absolute;
+    width: 23rem;
+    top: 10rem;
+    right: 8rem;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 15rem;
+    right: 25rem;
+    z-index: -1;
+    width: 27rem;
+}
+
+/* calories */
+.calories {
+    display: flex;
+    gap: 2rem;
+    background-color: #141614;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 36.1rem;
+    right: 28rem;
+}
+
+.calories>img{
+    width: 3rem;
+}
+
+.calories>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-child(1) {
+    color: var(--gray);
+}
+
+.calories>div>:nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .hero {
+        flex-direction: column;
+    }
+    .the-best-ad {
+        margin-top: 0rem;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-text>div {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .hero-text>div:nth-child(3){
+        font-size: small;
+    }
+
+    /* figure */
+    .figures {
+        align-items: center;
+        margin-top: 1rem;
+    justify-content: center;
+    margin-left: 0.5rem;
+    }
+
+    .figures>div>span:first-child {
+        font-size: 18px !important;
+    }
+    .figures>div>span:nth-child(2){
+        font-size: 14px !important;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* right */
+    .right-h {
+        background: none;
+    }
+
+    .heart-rate {
+        left: 1rem;
+        top: 2rem;
+        background: black;
+    }
+
+    .hero-image {
+        position: relative;
+        transform: scale(0.7);
+        right: -42px;
+        top: 1px;
+    }
+
+    .hero-image-back {
+        position: relative;
+        top: -15rem;
+        left: -4rem;
+    }
+
+    .calories {
+        position: relative;
+        top: -13rem;
+        left: 1rem;
+        right: 28rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+
+   
+}

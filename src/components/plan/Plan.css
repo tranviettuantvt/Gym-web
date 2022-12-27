@@ -1,0 +1,82 @@
+.plans-container {
+    margin-top: -4rem;
+}
+
+.program-header>:nth-child(2) {
+    margin-left: -1rem;
+}
+
+.plan-cards {
+    margin-top: 4rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.plan {
+    background-color: #0d0e0d;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+.plan:nth-child(2) {
+    transform: scale(1.1);
+    background: var(--planCard);
+}
+
+.plan:nth-child(2)>svg {
+    fill: white;
+}
+
+.plan>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan-name{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.plan > span:nth-of-type(2) {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.plan > span:nth-of-type(3) {
+    font-size: 0.8rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.feature-row>img {
+    width: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .plans-container {
+        margin-top: 1rem;
+    }
+
+    .plan-cards {
+        flex-direction: column;
+        margin: 3rem 1rem 2rem;
+        gap: 1rem;
+    }
+    .plan:nth-child(2) {
+        transform: none;
+    }
+}
+
